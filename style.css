@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* nav bar */
+nav {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    height: 40px;
+    background-color: black;
+    align-items: center;
+}
+
+nav ul li {
+    padding: 0 10px;
+}
+
+.logo img {
+    width: 30px;
+    height: 30px;
+    padding: 0 5px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.4rem;
+}
+
+/* container */
+
+.container {
+    min-height: 70vh;
+    background-color: black;
+    color: white;
+    display: flex;
+    margin: 15px auto;
+    width: 90%;
+    border-radius: 15px;
+    padding: 15px;
+    background-image: url(bg.jpg);
+}
+
+.songItemContainer {
+    padding: 20px 20px;
+}
+
+.songItem {
+    padding: 12px;
+    height: 10px;
+    width: 380px;
+    display: flex;
+    background-color: white;
+    color: black;
+    border-radius: 30px;
+    margin: 15px 0;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.songItem img {
+    height: 30px;
+    width: 30px;
+    border-radius: 30px;
+    margin: 0 20px;
+}
+
+.songItemPlay {
+    cursor: pointer;
+}
+
+/* bottom */
+
+.bottom {
+    position: sticky;
+    bottom: 0;
+    background-color: black;
+    color: white;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.icons {
+    margin: 10px 0;
+}
+
+.icons i {
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+#progressBar {
+    width: 90vw;
+}
+
+.songInfo {
+    position: absolute;
+    left: 5vw;
+}
+
+.songInfo img {
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+}
